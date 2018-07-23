@@ -32,3 +32,7 @@ for i in range(len(id_data['highlanderTournaments'])):
                     print(len(timeline_data),len(static_data),gameRealm,gameId,gamehash)
                 except:
                     pass
+
+
+time = id_data['highlanderTournaments'][0]['brackets']['c378484a-2d21-41bc-9189-445ccffa5cf6']['matches']['2fb835d7-004f-44e1-a2e3-6f619032c5e7']['games']['33c25744-d00a-471b-8378-2f2ae4fd83eb']['standings']['timestamp']
+datetime.datetime.fromtimestamp(time/1000)
